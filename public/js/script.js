@@ -1,7 +1,7 @@
-//khai báo biến slideIndex đại diện cho slide hiện tại
+
 var slideIndex;
 var slideIndex2;
-// KHai bào hàm hiển thị slide
+
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -15,16 +15,16 @@ function showSlides() {
 
   slides[slideIndex].style.display = "block";
   dots[slideIndex].className += " active";
-  //chuyển đến slide tiếp theo
+  
   slideIndex++;
-  //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+ 
   if (slideIndex > slides.length - 1) {
     slideIndex = 0
   }
-  //tự động chuyển đổi slide sau 5s
+ 
   setTimeout(showSlides, 5000);
 }
-//mặc định hiển thị slide đầu tiên 
+
 showSlides(slideIndex = 0);
 
 
@@ -45,16 +45,16 @@ function showSlides2() {
 
   slides[slideIndex2].style.display = "block";
   dots[slideIndex2].className += " active";
-  //chuyển đến slide tiếp theo
+  
   slideIndex2++;
-  //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+  
   if (slideIndex2 > slides.length - 1) {
     slideIndex2 = 0
   }
-  //tự động chuyển đổi slide sau 5s
+
   setTimeout(showSlides, 5000);
 }
-//mặc định hiển thị slide đầu tiên 
+
 showSlides2(slideIndex2 = 0);
 
 
